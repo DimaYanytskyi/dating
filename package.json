@@ -5,9 +5,8 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "build1": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby build",
+    "start": "strapi start --openssl-legacy-provider start",
+    "build": "strapi build --openssl-legacy-provider build",
     "strapi": "strapi"
   },
   "devDependencies": {},
