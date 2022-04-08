@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/approves",
+      "handler": "Approve.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/approves/count",
+      "handler": "Approve.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/approves/:id",
+      "handler": "Approve.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/approves",
+      "handler": "Approve.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/approves/:id",
+      "handler": "Approve.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/approves/:id",
+      "handler": "Approve.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobile/approvesdata",
+      "handler": "Approve.getWeeklyCountMonth",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mobile/approves",
+      "handler": "Approve.createMobileApproveRequest",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "income",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "incomeCreateDate": {
+      "type": "date"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "premiumType": {
+      "type": "string"
+    },
+    "user": {
+      "model": "user",
+      "via": "incomes",
+      "plugin": "users-permissions"
+    }
+  }
+}

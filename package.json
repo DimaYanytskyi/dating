@@ -1,0 +1,42 @@
+{
+  "name": "dating-admin-panel-v2",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "strapi": "3.0.0-beta.17.8",
+    "strapi-admin": "3.0.0-beta.17.8",
+    "strapi-utils": "3.0.0-beta.17.8",
+    "strapi-plugin-content-type-builder": "3.0.0-beta.17.8",
+    "strapi-plugin-content-manager": "3.0.0-beta.17.8",
+    "strapi-plugin-users-permissions": "3.0.0-beta.17.8",
+    "strapi-plugin-email": "3.0.0-beta.17.8",
+    "strapi-plugin-upload": "3.0.0-beta.17.8",
+    "strapi-hook-mongoose": "3.0.0-beta.17.8",
+    "@coreui/coreui": "^2.1.1",
+    "@coreui/coreui-plugin-chartjs-custom-tooltips": "^1.2.0",
+    "@coreui/icons": "0.3.0",
+    "@coreui/react": "^2.1.1",
+    "react-chartjs-2": "^2.7.4",
+    "classnames": "^2.2.6",
+    "chart.js": "^2.7.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "a85c0d30-5974-4ce9-b119-f740b54e6286"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

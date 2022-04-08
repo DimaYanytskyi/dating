@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "approve",
+  "info": {
+    "name": "approve",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "approveRequestDate": {
+      "type": "date"
+    },
+    "proofImageLink": {
+      "type": "string"
+    },
+    "user": {
+      "model": "user",
+      "via": "approve",
+      "plugin": "users-permissions"
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "connection": "default",
+  "collectionName": "users-permissions_user",
+  "info": {
+    "name": "user",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "configurable": false,
+      "private": true
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+      "model": "role",
+      "via": "users",
+      "plugin": "users-permissions",
+      "configurable": false
+    },
+    "approve": {
+      "model": "approve",
+      "via": "user"
+    },
+    "incomes": {
+      "collection": "income",
+      "via": "user"
+    },
+    "reports": {
+      "collection": "report",
+      "via": "user"
+    },
+    "photoUrl": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "isApproved": {
+      "type": "boolean"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "about": {
+      "type": "text"
+    },
+    "work": {
+      "type": "string"
+    },
+    "education": {
+      "type": "string"
+    },
+    "hobbies": {
+      "type": "string"
+    },
+    "bodyType": {
+      "type": "string"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "hairColor": {
+      "type": "string"
+    },
+    "eyeColor": {
+      "type": "string"
+    },
+    "personality": {
+      "type": "string"
+    },
+    "drinking": {
+      "type": "string"
+    },
+    "smoking": {
+      "type": "string"
+    },
+    "fireBaseRefID": {
+      "type": "string"
+    },
+    "createdDate": {
+      "type": "date"
+    }
+  }
+}

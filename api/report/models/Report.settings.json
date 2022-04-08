@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "report",
+  "info": {
+    "name": "report",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "reason": {
+      "type": "string"
+    },
+    "reportCreateDate": {
+      "type": "date"
+    },
+    "user": {
+      "model": "user",
+      "via": "reports",
+      "plugin": "users-permissions"
+    }
+  }
+}

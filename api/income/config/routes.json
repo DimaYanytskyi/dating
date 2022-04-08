@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/incomes",
+      "handler": "Income.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/incomes/count",
+      "handler": "Income.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/incomes/:id",
+      "handler": "Income.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/incomes",
+      "handler": "Income.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/incomes/:id",
+      "handler": "Income.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/incomes/:id",
+      "handler": "Income.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mobile/incomesdata",
+      "handler": "Income.getWeeklyCountMonth",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mobile/incomes",
+      "handler": "Income.createMobileIncomeRequest",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
