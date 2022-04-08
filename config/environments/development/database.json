@@ -1,0 +1,20 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "database": "myFirstDatabase",
+        "host": "mongodb+srv://cluster0.03ltr.mongodb.net",
+        "srv": "true",
+        "port": 27017,
+        "username": "dimayanytskyi",
+        "password": "Dima2003tda7377"
+      },
+      "options": {
+        "authenticationDatabase": "admin",
+        "ssl": true
+      }
+    }
+  }
+}
